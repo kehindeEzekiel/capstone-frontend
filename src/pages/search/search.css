@@ -1,0 +1,141 @@
+/* .search-container {
+  margin-top: 60px;
+  padding: 20px;
+  color: #1e1e1e;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.search-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.loading-text {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.no-results {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader svg {
+  width: 100px;
+  height: 100px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* === version 2===== */
+.search-container {
+  margin-top: 60px;
+  padding: 20px;
+  color: #1e1e1e;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.search-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111;
+  text-align: center;
+}
+
+.loading-text,
+.no-results {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+/* Loader styling */
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader svg {
+  width: 100px;
+  height: 100px;
+  animation: rotate 2s linear infinite;
+}
+
+/* Rotation animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 🔻 MOBILE RESPONSIVENESS */
+@media (max-width: 640px) {
+  .search-container {
+    padding: 10px;
+  }
+
+  .search-title {
+    font-size: 20px;
+  }
+
+  .loading-text,
+  .no-results {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .loader svg {
+    width: 80px;
+    height: 80px;
+  }
+}
