@@ -1,8 +1,10 @@
 node_module
 .env
+dist
 
 # Ignore node_modules directory
 node_modules/
 /node_modules/
 /.env
 /.env.local
+/dist
